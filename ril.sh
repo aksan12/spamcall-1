@@ -11,7 +11,7 @@ function send($phone){
         curl_close($ch);
               echo $asw."\n";
 }
-echo ~>Masukan Nomor (Mr.B-CT):> | figlet;
+echo "~>Masukan Nomor (Mr.B-CT):>";
 $nomor = trim(fgets(STDIN));
 $execute = send($nomor);
 print $execute;
